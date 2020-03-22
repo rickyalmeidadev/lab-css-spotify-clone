@@ -58,7 +58,7 @@ body {
 /* === Title Section === */
 
 .site-jumbotron {
-	background-image: url("/starter-code/images/landing.jpg");
+	background-image: url("../images/landing.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
