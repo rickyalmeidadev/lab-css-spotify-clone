@@ -1,4 +1,4 @@
-/*
+/* 
 Colors:
 
 Text: 1A1A1A
@@ -7,7 +7,95 @@ White: #FFF
 
 */
 
-html, body {
+/* === === New Variables === === */
+
+:root {
+	--custom-black: #1a1a1a;
+	--custom-green: #00b172;
+}
+
+/* === Color classes === */
+
+.text-color-black {
+color: var(--custom-black);
+}
+
+.text-color-green {
+    color: var(--custom-green);
+}
+
+/* === Sets and resets === */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-size: 1rem;
+	color: var(--custom-black);
+}
+
+/* === Navigation Bar === */
+
+.site-header {
+	font-size: 1em;
+}
+
+.site-header .navbar-brand-logo img {
+	width: 100%;
+}
+
+.site-header .navbar-brand-logo {
+	width: 40vw;
+	max-width: 13em;
+}
+
+.site-header .nav-item {
+	font-size: 1.5em;
+}
+
+/* === Title Section === */
+
+.site-jumbotron {
+	background-image: url("/starter-code/images/landing.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+    height: 100vh;
+    font-size: 1.3em;
+}
+
+.site-jumbotron h1 {
+	font-size: 3em;
+}
+
+/* === Features Section === */
+
+.site-features {
+    font-size: 1em;
+}
+
+.site-features h2 {
+    font-size: 3em; 
+}
+
+.site-features span {
+    border-bottom: 4px solid var(--custom-green); 
+    padding-bottom: 2px;
+}
+
+.site-features .feature-img {
+	margin: 0 auto;
+	width: 12em;
+	height: 12em;
+}
+
+.site-features .feature-img img {
+	width: 100%;
+}
+
+/* html, body {
   margin: 0;
   padding: 0;
   font-family: Circular, Arial, Helvetica, sans-serif;
@@ -180,4 +268,4 @@ h3 {
   font-size: 1.4em;
   font-weight: 100;
   width: 50%;
-}
+} */

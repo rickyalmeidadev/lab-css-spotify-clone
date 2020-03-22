@@ -1,74 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<head>
+
+    <!-- Bootstrap required -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+
     <title>Spotify</title>
-  </head>
-  <body>
-    <header class="header">
-      <img class="logo-top" src="./images/spotify-logo.png" alt="Spotify" />
-      <nav>
-        <a href="">Premium</a>
-        <a href="">Discover</a>
-        <a href="">Help</a>
-        <a href="">Download</a>
-      </nav>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="site-header">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+
+            <div class="container-fluid">
+
+                <!-- Brand Logo -->
+                <a href="#" class="navbar-brand ml-2">
+                    <div class="navbar-brand-logo">
+                        <img src="./images/spotify-logo.png" alt="Spotify" />
+                    </div>
+                </a>
+
+                <!-- Toggler Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Items -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav align-items-center ml-auto">
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Premium</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Discover</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Download</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
     </header>
-    <main>
-      <div class="main">
-        <div class="main-title">
-          <h1>Music for everyone.</h1>
-          <h2>
-            Spotify is now free on mobile, tablet and computer. <br> Listen to the
-            right music, wherever you are.
-          </h2>
+
+    <!-- Titler Section -->
+
+    <section class="site-jumbotron d-flex align-items-center">
+
+        <div class="container col-10">
+
+            <h1 class="text-white text-center font-weigth-bold py-3"> Music for everyone.</h1>
+
+            <p class="text-white text-center py-3 font-weigth-lighter">Spotify is now free on mobile, tablet and
+                computer. <br>
+                Listen to the right music, wherever you are.</p>
+
         </div>
-      </div>
-    </main>
-    <section class="features">
-      <h3>What's on Spotify?</h3>
-      <div class="info-group">
-        <div class="info-area">
-          <img src="./images/music-icon.png" alt="" />
-          <h4>Millions of Songs</h4>
-          <p>There are millions of songs on Spotify</p>
-        </div>
-        <div class="info-area">
-          <img src="./images/high-quality-icon.png" alt="" />
-          <h4>HD Music</h4>
-          <p>Listen to music as if you were listening live</p>
-        </div>
-        <div class="info-area">
-          <img src="./images/devices-icon.png" alt="" />
-          <h4>Stream Everywhere</h4>
-          <p>Stream music on your smartphone, tablet or computer</p>
-        </div>
-      </div>
+
     </section>
-    <footer class="footer">
-      <div class="final-info">
-        <h3>It's as yeezy as Kayne West.</h3>
+
+    <!-- Features Section -->
+
+    <section class="site-features">
+
+        <div class="container-fluid my-5">
+
+            <!-- Title -->
+            <h2 class="text-center p-3"><span> What's on Spotify?</span></h2>
+
+            <!-- Cards -->
+            <div class="row p-5">
+
+                <div class="col-12 col-lg-4 p-4">
+                    
+                    <div class="feature-img">
+                        <img src="./images/music-icon.png" alt="" />
+                    </div>
+
+                    <div class="container col-lg-9">
+                        <h3 class="text-center text-color-green">Millions of Songs</h3>
+                        <p class="text-center lead">There are millions of songs on Spotify</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-4 p-4">
+                    
+                    <div class="feature-img">
+                        <img src="./images/high-quality-icon.png" alt="" />
+                    </div>
+
+                    <div class="container col-lg-9">
+                        <h3 class="text-center text-color-green">HD Music</h3>
+                        <p class="text-center lead">Listen to music as if you were listening live</p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-12 col-lg-4 p-4">
+                    
+                    <div class="feature-img">
+                        <img src="./images/devices-icon.png" alt="" />
+                    </div>
+
+                    <div class="container col-lg-9">
+                        <h3 class="text-center text-color-green">Stream Everywhere</h3>
+                        <p class="text-center lead">Stream music on your smartphone, tablet or computer</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- <footer class="footer">
+        <div class="final-info">
+            <h3>It's as yeezy as Kayne West.</h3>
             <h4>Search</h4>
             <p>Know what you want to listen to? Just search and hit play.</p>
-          
-          
+
+
             <h4>Browse</h4>
             <p>
-              Check out the latest charts, brand new releases and great playlists
-              for right now.
-          </p>
-          
-          <h4>Discover</h4>
-            <p>
-              Enjoy new music every Monday with your own personal playlist. Or sit
-              back and enjoy Radio.
+                Check out the latest charts, brand new releases and great playlists
+                for right now.
             </p>
-          
-      </div>
-      <img src="./images/spotify-app.jpg" alt="" />
-    </footer>
-  </body>
+
+            <h4>Discover</h4>
+            <p>
+                Enjoy new music every Monday with your own personal playlist. Or sit
+                back and enjoy Radio.
+            </p>
+
+        </div>
+        <img src="./images/spotify-app.jpg" alt="" />
+    </footer> -->
+
+
+    <!-- Bootstrap required -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
