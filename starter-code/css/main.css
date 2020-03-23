@@ -17,11 +17,11 @@ White: #FFF
 /* === Color classes === */
 
 .text-color-black {
-color: var(--custom-black);
+	color: var(--custom-black);
 }
 
 .text-color-green {
-    color: var(--custom-green);
+	color: var(--custom-green);
 }
 
 /* === Sets and resets === */
@@ -31,8 +31,12 @@ color: var(--custom-black);
 	padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
-    font-size: 1rem;
+	font-size: 1em;
 	color: var(--custom-black);
 }
 
@@ -40,6 +44,10 @@ body {
 
 .site-header {
 	font-size: 1em;
+}
+
+.site-header .nav-item {
+    font-size: 2.2em;
 }
 
 .site-header .navbar-brand-logo img {
@@ -51,10 +59,6 @@ body {
 	max-width: 13em;
 }
 
-.site-header .nav-item {
-	font-size: 1.5em;
-}
-
 /* === Title Section === */
 
 .site-jumbotron {
@@ -62,8 +66,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
-    height: 100vh;
-    font-size: 1.3em;
+	height: 100vh;
+	font-size: 2.2em;
 }
 
 .site-jumbotron h1 {
@@ -73,16 +77,24 @@ body {
 /* === Features Section === */
 
 .site-features {
-    font-size: 1em;
+	font-size: 2.2em;
 }
 
 .site-features h2 {
-    font-size: 3em; 
+	font-size: 1.5em;
 }
 
 .site-features span {
-    border-bottom: 4px solid var(--custom-green); 
-    padding-bottom: 2px;
+	border-bottom: 4px solid var(--custom-green);
+	padding-bottom: 2px;
+}
+
+.site-features h3 {
+	font-size: 1.4em;
+}
+
+.site-features p {
+	font-size: 1em;
 }
 
 .site-features .feature-img {
@@ -93,6 +105,25 @@ body {
 
 .site-features .feature-img img {
 	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    html {
+        font-size: 70%;
+    }
+
+    .site-jumbotron {
+        font-size: 3em;
+    }
+
 }
 
 /* html, body {
